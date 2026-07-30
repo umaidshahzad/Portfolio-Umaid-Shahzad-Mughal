@@ -31,7 +31,7 @@ export default function Projects() {
           </div>
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap gap-2">
+          {/* <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -45,7 +45,7 @@ export default function Projects() {
                 {cat === 'All' ? 'All Systems' : cat.split(' ')[0] + ' ' + (cat.split(' ')[1] || '')}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Projects Grid */}
