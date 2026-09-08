@@ -58,6 +58,30 @@ export const portfolioData = {
 
   projects: [
     {
+      id: "cook-nook",
+      title: "Cook Nook",
+      subtitle: "Multi-branch Restaurant Ordering Platform",
+      category: "Full Stack / E-Commerce",
+      featured: true,
+      badge: "Production Ready",
+      demoLink: "https://cook-nook.onrender.com/",
+      techStack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "Supabase", "Framer Motion", "Zustand"],
+      shortDescription: "A comprehensive, responsive web application designed for a multi-branch restaurant chain with real-time dashboards and secure payment integrations.",
+      bulletPoints: [
+        "Built with Next.js 14 offering a seamless customer ordering experience with dynamic branch-aware menus and a fluid animated cart drawer.",
+        "Engineered real-time dashboards for Branch Admins using Supabase Real-time subscriptions for instant kitchen order display and status management.",
+        "Integrated SafePay API for secure checkout processing, supporting Cash on Delivery, JazzCash, EasyPaisa, and Visa/Mastercard.",
+        "Implemented automated WhatsApp alarm notifications using CallMeBot API to alert kitchen staff of high-priority orders."
+      ],
+      githubLink: "https://github.com/umaidshahzad/Cook-Nook-fast-food-chain",
+      architectureNotes: "Uses Supabase PostgreSQL database with Row Level Security (RLS) for data protection, and background Webhooks to process payments.",
+      stats: [
+        { label: "Real-time Sync", value: "Supabase" },
+        { label: "Payments", value: "SafePay" },
+        { label: "Notifications", value: "WhatsApp" }
+      ]
+    },
+    {
       id: "mh-concepts",
       title: "MH Concepts",
       subtitle: "Full Stack Interior Decor Lead Generation Platform",
