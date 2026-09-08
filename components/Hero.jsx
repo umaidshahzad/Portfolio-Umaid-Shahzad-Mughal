@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { ArrowDown, Copy, Check, Github, Linkedin, Mail, Code, Terminal, Sparkles, Layers } from 'lucide-react';
+import { ArrowDown, Copy, Check, Github, Linkedin, Mail, Code, Terminal, Sparkles, Layers, Download } from 'lucide-react';
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
@@ -76,6 +76,15 @@ export default function Hero() {
             {copied ? <Check size={16} className="text-emerald-600" /> : <Copy size={16} />}
             <span>{copied ? "Email Copied!" : email}</span>
           </button>
+
+          <a
+            href="/Umaid_Shahzad_Resume (1).pdf"
+            download="Umaid_Shahzad_Resume.pdf"
+            className="inline-flex items-center gap-2 px-5 py-3.5 bg-[#f0eded] dark:bg-[#1c232b] text-[#181e25] dark:text-[#f3f0f0] rounded-full border border-[#e5e2e2] dark:border-[#2d333a] font-mono text-sm font-medium hover:bg-[#e5e2e2] dark:hover:bg-[#2d333a] transition-colors"
+          >
+            <Download size={16} />
+            <span>Resume</span>
+          </a>
 
           {/* Social Links */}
           <div className="flex items-center space-x-2 pl-2">
